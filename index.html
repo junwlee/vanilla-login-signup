@@ -1,38 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인 모달</title>
-  <link rel="stylesheet" href="/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>REPLY CHANGE</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="shortcut icon" href="images/body_bg.jpg">
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </head>
 <body>
-<!-- 모달 시작 -->
-<div class="modal">
-  <button class="close-btn">&#9747;</button>
-  <!-- 모달 헤더 -->
-  <div class="modal-header">
-    <div class="symbol"></div>
-    <br>
-    <br>
-    <h1>데칼코마니에 오신 것을</h1>
-    <h1>환영합니다</h1>
-  </div>
-  <!-- 입력 필드 시작 -->
-  <form id="loginForm">
-    <label for="email">이메일</label>
-    <input type="email" id="email" class="input-field" placeholder="이메일">
-    <label for="password">비밀번호</label>
-    <input type="password" id="password" class="input-field" placeholder="비밀번호">
-    <!-- 버튼 필드 -->
-    <div class="modal-footer">
-      <button type="button" class="btn btn-login">로그인</button>
-      <span>또는</span>
-      <button type="button" class="btn btn-signup">회원가입</button>
-    </div>
-  </form>
-  <!-- 입력 필드 끝 -->
-</div>
-<!-- 모달 끝 -->
+	<div id="wrap">
+		<header class="header">
+			<h1 class="logo">
+				<a href="index.html">댓칼코마니<br></a>
+			</h1>
+			<nav class="nav">
+				<ul class="gnb">
+					<li><a href="index.html">BACKGROUD</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+					<li><a href="about.html">ABOUT</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+					<li><a href="startnow.html">START NOW</a><span class="sub_menu_toggle_btn">하위 메뉴 토글 버튼</span></li>
+				</ul>
+			</nav>
+			<span class="menu_toggle_btn">전체 메뉴 토글 버튼</span>
+		</header>
+        <section class="content_section">
+			<h2>창작자를 위한</h2>
+			<h2 class="title">악성댓글 필터링 플랫폼</h2>
+			<div class="para">
+				<p>창작을 하고 싶지만 악성댓글 때문에 두려우신가요?</p>
+				<p>이 서비스를 이용해보세요 !</p>
+			</div>
+			<button type="button" class="button">START NOW &nbsp;&nbsp;&nbsp;&nbsp;→</button>
+		</section>
+	</div>
 </body>
 </html>

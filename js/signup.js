@@ -1,36 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//   const closeButton = document.querySelector('.close-btn');
-//   const loginButton = document.querySelector('.btn-login');
-//   const signupForm = document.getElementById('signupForm');
-//
-//   // X 이모지 클릭 시 index.html로 이동
-//   closeButton.addEventListener('click', function() {
-//     window.location.href = 'index.html';
-//   });
-//
-//   // 로그인 버튼 클릭 시 login.html로 이동
-//   loginButton.addEventListener('click', function() {
-//     window.location.href = 'login.html';
-//   });
-//
-//   // 회원가입 폼 제출 시 로컬 스토리지 저장 및 새로고침 방지
-//   signupForm.addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     const name = document.getElementById('name').value;
-//     const email = document.getElementById('email').value;
-//     const password = document.getElementById('password').value;
-//     const phone = document.getElementById('phone').value;
-//
-//     // 사용자 정보를 로컬 스토리지에 저장
-//     localStorage.setItem(email, password);
-//
-//     // 회원가입 완료 메시지를 띄우고 index.html로 이동
-//     alert(`${name}님, 회원가입이 완료되었습니다.`);
-//     window.location.href = 'index.html';
-//   });
-// });
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const closeButton = document.querySelector('.close-btn');
   const loginButton = document.querySelector('.btn-login');
@@ -108,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const password = passwordInput.value;
     const phone = phoneInput.value;
 
+    // 사용자 정보를 로컬 스토리지에 저장
     localStorage.setItem(email, JSON.stringify({password, name, phone}));
 
     alert(`${name}님, 회원가입이 완료되었습니다.`);

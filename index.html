@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 모달</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- 모달 시작 -->
+<div class="modal">
+  <button class="close-btn">&#9747;</button>
+  <!-- 모달 헤더 -->
+  <div class="modal-header">
+    <div class="symbol"></div>
+    <br>
+    <br>
+    <h1>데칼코마니에 오신 것을</h1>
+    <h1>환영합니다</h1>
+  </div>
+  <!-- 입력 필드 시작 -->
+  <form id="loginForm">
+    <label for="email">이메일</label>
+    <input type="email" id="email" class="input-field" placeholder="이메일">
+    <label for="password">비밀번호</label>
+    <input type="password" id="password" class="input-field" placeholder="비밀번호">
+    <!-- 버튼 필드 -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-login">로그인</button>
+      <span>또는</span>
+      <button type="button" class="btn btn-signup">회원가입</button>
+    </div>
+  </form>
+  <!-- 입력 필드 끝 -->
+</div>
+<!-- 모달 끝 -->
+</body>
+</html>

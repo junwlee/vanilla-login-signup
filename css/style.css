@@ -1,0 +1,101 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.symbol {
+  display: block;
+  margin: 10px auto; /* 상하 마진 10px, 좌우 마진 자동으로 설정하여 중앙 정렬 */
+  width: 50px; /* 원의 너비 */
+  height: 50px; /* 원의 높이 */
+  background-color: blue; /* 원의 배경색을 파란색으로 설정 */
+  border-radius: 50%; /* 원의 모서리를 둥글게 만들어 원 모양 생성 */
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* 원하는 너비 */
+  height: 500px; /* 원하는 높이 */
+  overflow-y: auto; /* 내용이 높이를 초과할 경우 스크롤 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.close-btn {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 10px; /* 버튼을 모달의 오른쪽 위에 위치시킴 */
+  right: 10px;
+}
+
+.modal-header {
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.modal-header h1 {
+  margin: 5px 0; /* h1 태그의 상하 여백을 5px로 설정 */
+}
+
+.modal-header p {
+  color: #333;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+label {
+  margin: 0;
+  padding: 5px; /* 또는 원하는 값으로 조정 */
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.modal-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.btn-login {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+.btn-signup {
+  background-color: #fff;
+}
+
